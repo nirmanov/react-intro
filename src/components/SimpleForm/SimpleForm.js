@@ -1,5 +1,6 @@
 import React from "react";
 import Greetings from "../Greetings/Greetings";
+import TextField from "../TextField/TextField";
 import "./style.css"
 
 class SimpleForm extends React.Component {
@@ -48,21 +49,21 @@ class SimpleForm extends React.Component {
 
     return (
       <div className="wrapper" >
-        <div className="wrapper-inner">
-          <label>
-            First name:
-            <input className="input"
-              type="text"
-              name="firstName"
-              onChange={this.onFirstNameChange}
-              onBlur={this.onFirstNameBlur}
-            />
-            {firstNameError && <div className="error">{firstNameError}</div>}
-          </label>
-        </div>
-        
+        <TextField name="firstName"
+          label="First name:"
+          onChange={this.onFirstNameChange}
+          onBlur={this.onFirstNameBlur}
+          error={firstNameError} />
+
+        <TextField name="lastName"
+          label="Last name:"
+          onChange={this.onLastNameChange}
+          onBlur={this.onLastNameBlur}
+          error={lastNameError} />
+
         <Greetings
           firstName={firstName}
+          lastName={lastName}
         />
       </div>
 

@@ -9,7 +9,7 @@ const TextField = ({ name, onChange, onBlur, error, label }) => (
         type="text"
         name={name}
         onChange={onChange}
-        onBlur={this.onBlur}
+        onBlur={onBlur}
       />
       {error && <div className="error">{error}</div>}
     </label>
