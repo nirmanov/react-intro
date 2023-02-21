@@ -66,12 +66,6 @@ class SimpleForm extends React.Component {
           lastName={lastName}
         />
       </div>
-
-
-      // <div>
-      //   <input type="text" name="firstName" onChange={this.onFirstNameChange} />
-      //   <Greetings firstName={this.state.firstName} />
-      // </div>
     );
   }
 }

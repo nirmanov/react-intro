@@ -1,8 +1,8 @@
 import React from 'react';
-import Greetings from './components/Greetings/Greetings';
-import logo from './logo.svg';
-import './App.css';
+// import Greetings from './components/Greetings/Greetings';
+// import logo from './logo.svg';
 import SimpleForm from './components/SimpleForm/SimpleForm';
+import './App.css';
 
 // class App extends Component {
 //   render() {
@@ -63,7 +63,6 @@ import SimpleForm from './components/SimpleForm/SimpleForm';
 
 const App = () => (
   <div>
-    {/* <Greetings firstName="John" lastName="Smith" /> */}
     <SimpleForm />
   </div>
 )
